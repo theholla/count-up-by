@@ -4,7 +4,7 @@
 
 ## Description
 
-Tell this app what number to count by, and when to stop. It will do that for you.
+Too tired to count? This application will count for you. You specify the upper bound and the number to count by, and it will do the rest.
 
 ## Setup
 

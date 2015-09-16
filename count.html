@@ -7,30 +7,31 @@
     <script src="js/scripts.js"></script>
 </head>
 <body>
-    <form id="count-up-by" class="white-pink">
-        <h1>Too tired to count?
-            <span>I'll count for you.</span>
-        </h1>
-        <label for="countTo">
-            <span>What shall I count to?</span>
-            <input id="countTo" type="number" name="countTo" placeholder="ex. 503" />
-        </label>
+    <div class="container">
+        <form id="count-up-by" class="white-pink">
+            <h1>Too tired to count?
+                <h3><span>I'll count for you.</span></h3>
+            </h1>
+            <div class="form-group">
+                <label for="countTo">
+                    <span>What shall I count to?</span>
+                    <input id="countTo" type="number" min="1" name="countTo" class="form-control" placeholder="Example: 503" required/>
+                </label>
 
-        <label for="countBy">
-            <span>What shall I count by?</span>
-            <input id="countBy" type="number" min="1" name="countBy" placeholder="5" />
-        </label>
+                <label for="countBy">
+                    <span>What shall I count by?</span>
+                    <input id="countBy" type="number" min="1" name="countBy" class="form-control" placeholder="Example: 5" required/>
+                </label>
 
-         <label>
-            <span>&nbsp;</span>
-            <input type="button" class="button" value="Do it to it" />
-        </label>
-    </form>
+                <button type="submit" class="button">Do it to it!</button>
+            </div>
+        </form>
 
-    <div id="result" class="white-pink">
-        <h3>Here's how you count from 1 to <span class="countTo"></span> by
-            <span class="countBy"></span>'s:</h3>
-        <p><span class="output"></span></p>
-    </div>
-</body>
-</html>
+        <div id="result" class="white-pink">
+            <h3>Here's how you count to <span class="countTo"></span> by
+                <span class="countBy"></span>'s:</h3>
+                <p><span class="output"></span></p>
+            </div>
+        </div>
+    </body>
+    </html>
