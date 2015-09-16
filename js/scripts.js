@@ -9,7 +9,8 @@ var countUp = function(howHigh, byWhat) {
     }
     return numberArray;
   } else {
-    var sorry = "You can't count to " + howHigh + " by " + byWhat +
+    // Move this to a hidden span in html file
+    var sorry = "You can't really count to " + howHigh + " by " + byWhat +
     "'s! Try another number, please.";
     return sorry;
   }
