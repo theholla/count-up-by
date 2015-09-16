@@ -1,0 +1,36 @@
+<!DOCTYPE = html>
+<html>
+<head>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/form_style.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+    <form id="count-up-by" class="white-pink">
+        <h1>Too tired to count?
+            <span>I'll count for you.</span>
+        </h1>
+        <label for="countTo">
+            <span>What shall I count to?</span>
+            <input id="countTo" type="number" name="countTo" placeholder="ex. 503" />
+        </label>
+
+        <label for="countBy">
+            <span>What shall I count by?</span>
+            <input id="countBy" type="number" min="1" name="countBy" placeholder="5" />
+        </label>
+
+         <label>
+            <span>&nbsp;</span>
+            <input type="button" class="button" value="Do it to it" />
+        </label>
+    </form>
+
+    <div id="result" class="white-pink">
+        <h3>Here's how you count from 1 to <span class="countTo"></span> by
+            <span class="countBy"></span>'s:</h3>
+        <p><span class="output"></span></p>
+    </div>
+</body>
+</html>
